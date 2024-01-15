@@ -7,8 +7,6 @@ import {
   Get,
   Param,
   Patch,
-  HttpCode,
-  Delete,
 } from '@nestjs/common'
 import { ContactsService } from './contacts.service'
 import { AuthJwtGuard } from '../auth/authGuards/auth-jwt.guard'
