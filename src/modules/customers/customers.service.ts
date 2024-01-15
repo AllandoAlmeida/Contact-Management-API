@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
 import { CreateCustomerDto } from './dto/create-customer.dto'
 import { UpdateCustomerDto } from './dto/update-customer.dto'
-import { PrismaService } from 'src/database/prisma.service'
 import { Customer as CustomerModel } from '@prisma/client'
-import { excludedFields } from 'src/Hooks/excludeFields'
-import { checkFieldsExistence } from 'src/Hooks/checkFieldsExistence'
+import { excludedFields } from '../../Hooks/excludeFields'
+import { checkFieldsExistence } from '../../Hooks/checkFieldsExistence'
+import { PrismaService } from '../../database/prisma.service'
 
 @Injectable()
 export class CustomersService {

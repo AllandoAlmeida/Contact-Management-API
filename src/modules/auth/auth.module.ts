@@ -3,8 +3,7 @@ import { AuthService } from './auth.service'
 import { AuthController } from './auth.controller'
 import { CustomersModule } from '../customers/customers.module'
 import { JwtModule } from '@nestjs/jwt'
-import { CustomersService } from '../customers/customers.service'
-import { PrismaService } from 'src/database/prisma.service'
+import { PrismaService } from '../../database/prisma.service'
 import { AuthLocalStrategy } from './authStrategies/auth-local.strategy'
 import { AuthJwtStrategy } from './authStrategies/auth-jwt.strategy'
 import { AuthRefreshTokenStrategy } from './authStrategies/auth-refreshToken.strategy'
@@ -21,7 +20,6 @@ import { AuthRefreshTokenStrategy } from './authStrategies/auth-refreshToken.str
   ],
   providers: [
     AuthService,
-    CustomersService,
     PrismaService,
     AuthLocalStrategy,
     AuthJwtStrategy,

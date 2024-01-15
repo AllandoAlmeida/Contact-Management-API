@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, Request } from '@nestjs/common'
 import { Contact as ContactModel } from '@prisma/client'
-import { PrismaService } from 'src/database/prisma.service'
+import { PrismaService } from '../../database/prisma.service'
 import { CreateContactDto } from './dto/create-contact.dto'
 import { UpdateContactDto } from './dto/update-contact.dto'
 

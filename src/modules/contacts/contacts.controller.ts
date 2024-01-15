@@ -21,7 +21,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger'
 import { UpdateContactDto } from './dto/update-contact.dto'
-import { PrismaService } from 'src/database/prisma.service'
+import { PrismaService } from '../../database/prisma.service'
 import { CreateContactDto } from './dto/create-contact.dto'
 
 @ApiBearerAuth()
