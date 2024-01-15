@@ -6,6 +6,7 @@ import * as express from 'express'
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule)
+  app.enableCors()
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
@@ -47,7 +48,7 @@ async function bootstrap() {
   }
 
   app.use(redirectToSwagger)
-  /* app.enableCors() */
-  await app.listen(process.env.PORT)
+
+  await app.listen(3009)
 }
 bootstrap()
