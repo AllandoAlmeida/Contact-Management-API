@@ -4,8 +4,8 @@ import { AuthController } from './auth.controller'
 import { CustomersModule } from '../customers/customers.module'
 import { JwtModule } from '@nestjs/jwt'
 import { PrismaService } from '../../database/prisma.service'
-import { AuthLocalStrategy } from './authStrategies/auth-local.strategy'
-import { AuthJwtStrategy } from './authStrategies/auth-jwt.strategy'
+import { AuthLocalStrategy } from '../auth/authStrategies/auth-local.strategy'
+import { AuthJwtStrategy } from '../auth/authStrategies/auth-jwt.strategy'
 import { AuthRefreshTokenStrategy } from './authStrategies/auth-refreshToken.strategy'
 
 @Module({
