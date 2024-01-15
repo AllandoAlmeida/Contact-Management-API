@@ -47,9 +47,7 @@ async function bootstrap() {
   }
 
   app.use(redirectToSwagger)
-  app.enableCors({
-    origin: 'contact-management-app-gray.vercel.app',
-  })
+  /* app.enableCors() */
   await app.listen(process.env.PORT)
 }
 bootstrap()
