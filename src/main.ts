@@ -46,9 +46,10 @@ async function bootstrap() {
     }
   }
 
-  // Aplicando o middleware
   app.use(redirectToSwagger)
-  app.enableCors()
+  app.enableCors({
+    origin: 'contact-management-app-gray.vercel.app',
+  })
   await app.listen(process.env.PORT)
 }
 bootstrap()
